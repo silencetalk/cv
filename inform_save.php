@@ -21,7 +21,7 @@ try {
     $ret = $sth->execute([$title, $content, intval($_SESSION['uid']), date("Y-m-d H:i:s")]);
 
     // header("Location: user_login.php");
-    die("简历保存成功<script>location='inform_list.php'</script>");
+    die("Inform保存成功<script>location='inform_list.php'</script>");
 } catch (PDOException $Exception) {
     $errorInfo = $sth->errorInfo();
     if ($errorInfo[1] == 1062) {
