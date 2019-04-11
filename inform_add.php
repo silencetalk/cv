@@ -2,7 +2,7 @@
 session_start();
 if (intval($_SESSION['uid']) < 1) {
         header("Location: user_login.php");
-        die("请先<a href='user_login.php'>登入</a>再添加简历");
+        die("请先<a href='user_login.php'>登入</a>再添加Inform");
     }
 ?>
 <!DOCTYPE html>

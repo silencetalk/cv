@@ -11,7 +11,7 @@ try {
     $sql = "SELECT `id`,`uid`,`title`,`created_at` FROM `inform` WHERE `uid` = ? AND `is_deleted` != 1";
     $sth = $dbh->prepare($sql);
     $ret = $sth->execute([intval($_SESSION['uid'])]);
-    $resume_list = $sth->fetchAll(PDO::FETCH_ASSOC);
+    $inform_list = $sth->fetchAll(PDO::FETCH_ASSOC);
 } catch (Exception $Exception) {
     die($Exception->getMessage());
 }
@@ -36,7 +36,7 @@ try {
         <?php if ($inform_list) : ?>
             <ul class="inform_list">
                 <?php foreach ($inform_list  as $item) : ?>
-                    <li id="rlist-<?= $item['id'] ?>">
+                    <li id="infolist-<?= $item['id'] ?>">
                         <span class="menu_square_large"></span>
                         <a href="inform_detail.php?id=<?= $item['id'] ?>" class="title  middle" target="_blank"><?= $item['title'] ?></a>
                         <a href="inform_detail.php?id=<?= $item['id'] ?>" target="_blank"><img src="image/open_in_new.png" alt="查看"></a>
