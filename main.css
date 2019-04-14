@@ -78,6 +78,18 @@ body {
 
 .headbox .logo {
     float: left;
-    height: 80px;
-    width: 100px;
+}
+
+.headbox .logoimage {
+    height: 80px !important;
+    width: 100px !important;
+}
+
+.inform_list {
+    padding: 0px;
+}
+
+.inform_list li {
+    list-style-type: square;
+    margin: 0px;
 }

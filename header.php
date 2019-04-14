@@ -10,5 +10,5 @@
             <li><span class="menu_square"></span><a href="user_login.php">登入</a></li>
         </ul>
     <?php endif; ?>
-    <div class="logo"><a href="index.php"><img src="image/logo.png" alt="BOE logo" /></a></div>
+    <div class="logo"><a href="index.php"><img src="image/logo.png" alt="BOE logo" class="logoimage" /></a></div>
 </div>
