@@ -117,33 +117,34 @@ body {
     max-height: 14px;
 }
 
-.headbox {
+.headerbox {
     min-height: 80px;
     /* border-bottom:1px solid red; */
     clear: both;
 }
 
-.headbox a {
+.headerbox a {
     color: rgb( 0, 152, 255);
 }
 
-.headbox .logo {
+.headerbox .logo {
     float: left;
 }
 
 .logo img {
-    width: 100px;
+    width: 120px;
     height: 80px;
 }
 
-.headbox .menu {
+.headerbox .menu {
     float: right;
-    margin: 0px;
+    margin-top: 25px;
     padding: 0px;
     font-size: 18px;
 }
 
-.headbox .menu>li {
+.headerbox .menu>li {
+    float: right;
     display: inline-block;
 }
 
