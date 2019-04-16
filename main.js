@@ -4,3 +4,15 @@ function send_form(form_id) {
             $("#" + form_id + "_notice").html(data);
     });
 }
+
+function confirm_delete(id) {
+
+    if (confirm("确定要删除Inform么？")) {
+        // 
+        $.post('inform_remove.php?id=' + id, null, function(data) {
+            if (data == 'done') {
+                $("#infolist-" + id).remove();
+            }
+        });
+    }
+}

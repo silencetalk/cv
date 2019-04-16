@@ -37,8 +37,33 @@ body {
     font-size: 14px;
 }
 
+.container .cancel-button {
+    padding: 10px;
+    background-color: rgb(153, 153, 153);
+    border: 0px;
+    color: white;
+    font-size: 14px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.container textarea {
+    padding: 10px;
+    border: 2px solid #eee;
+    font-size: 14px;
+    min-height: 200px;
+}
+
+.container *::placeholder {
+    color: #ccc;
+}
+
 .middle {
     width: 300px;
+}
+
+.full {
+    width: 100%;
 }
 
 .middle-button {
@@ -51,49 +76,16 @@ body {
     background-color: bisque;
 }
 
-.container textarea {
-    padding: 10px;
-    border: 2px solid #eee;
-    font-size: 14px;
-    min-height: 200px;
-}
-
-.full {
-    width: 100%;
-}
-
-.container *::placeholder {
-    color: #ccc;
-}
-
-.headbox {
-    min-height: 80px;
-    /* border-bottom:1px solid red; */
-    clear: both;
-}
-
-.headbox a {
-    color: rgb( 0, 152, 255);
-}
-
-.headbox .logo {
-    float: left;
-}
-
-.logo img {
-    width: 100px;
-    height: 80px;
-}
-
 .inform_list {
     padding: 0px;
     font-size: 16px !important;
 }
 
 .inform_list li {
-    list-style-image: url(image/resume.png);
-    list-style: inside;
+    /*list-style-image: url(image/resume.png);
+    list-style: inside;*/
     margin: 0px;
+    display: block;
     vertical-align: middle;
 }
 
@@ -123,4 +115,50 @@ body {
 
 .inform_add img {
     max-height: 14px;
+}
+
+.headbox {
+    min-height: 80px;
+    /* border-bottom:1px solid red; */
+    clear: both;
+}
+
+.headbox a {
+    color: rgb( 0, 152, 255);
+}
+
+.headbox .logo {
+    float: left;
+}
+
+.logo img {
+    width: 100px;
+    height: 80px;
+}
+
+.headbox .menu {
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    font-size: 18px;
+}
+
+.headbox .menu>li {
+    display: inline-block;
+}
+
+.menu_square {
+    display: inline-block;
+    background-color: #ccc;
+    width: 14px;
+    height: 14px;
+    margin-right: 5px;
+}
+
+.menu_square_large {
+    display: inline-block;
+    background-color: #ccc;
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
 }
