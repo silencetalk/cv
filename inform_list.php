@@ -29,7 +29,7 @@ try {
     <script src="main.js"></script>
 </head>
 
-<body>n
+<body>
     <div class="container">
         <?php include 'header.php' ?>
         <h1>值班交接</h1>

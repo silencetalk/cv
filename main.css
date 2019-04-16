@@ -80,16 +80,47 @@ body {
     float: left;
 }
 
-.headbox .logoimage {
-    height: 80px !important;
-    width: 100px !important;
+.logo img {
+    width: 100px;
+    height: 80px;
 }
 
 .inform_list {
     padding: 0px;
+    font-size: 16px !important;
 }
 
 .inform_list li {
-    list-style-type: square;
+    list-style-image: url(image/resume.png);
+    list-style: inside;
     margin: 0px;
+    vertical-align: middle;
+}
+
+.inform_list li .title {
+    display: inline-block;
+    padding: 10px;
+    border: 2px solid #eee;
+    text-decoration: none;
+    color: rgb( 0, 152, 255);
+    line-height: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.inform_list li a:not(.title) {
+    padding-left: 10px;
+    display: inline-block;
+}
+
+.inform_add {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb( 0, 152, 255);
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.inform_add img {
+    max-height: 14px;
 }
