@@ -8,9 +8,7 @@ services:
     volumes:
       - "./data/web:/data"
   mysql.ftqq.com:
-      #image: yobasystems/alpine-mariadb
-      image: ccr.ccs.tencentyun.com/ftqq/mysql-alpine
-      # build: ./buildMysql
+      image: ccr.ccs.tencentyun.com/ftqq/mysql.ftqq.com
       environment:
         MYSQL_ROOT_PASSWORD: itworks1343
         MYSQL_DATABASE: fangtangdb
