@@ -2,13 +2,10 @@
 error_reporting(E_ALL & ~E_NOTICE);
 session_start();
 $is_login = intval($_SESSION['uid']) < 1 ? false : true;
-
 try {
-    $dbh = new PDO('mysql:host=mysql.ftqq.com;dbname=fangtangdb', 'php','fangtang');
+    $dbh = new PDO('mysql:host=mysql.ftqq.com;dbname=fangtangdb', 'php', 'fangtang');
     $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
     $sql = "SELECT `id`,`uid`,`title`,`created_at` FROM `inform` WHERE `is_deleted` != 1";
-
     $sth = $dbh->prepare($sql);
     $ret = $sth->execute([intval($_SESSION['uid'])]);
     $inform_list = $sth->fetchAll(PDO::FETCH_ASSOC);
